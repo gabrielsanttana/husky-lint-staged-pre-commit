@@ -1,4 +1,4 @@
-<p align="center">🐶 Setup for pre-commit workflows with Husky and Lint-Staged</p>
+<p align="center">🐶 Setup for pre-commit workflows with Husky and Lint Staged</p>
 
 ## 🛠️ Technologies
 
@@ -38,6 +38,6 @@ The application will pop-up in the browser on http://localhost:3000
 
 ## ⚖️ License
 
-[MIT License](https://github.com/gabrielsanttana/linkedin/blob/master/LICENSE)
+[MIT License](https://github.com/gabrielsanttana/husky-lint-staged-pre-commit/blob/master/LICENSE)
 
 <h6 align="center">Made with ❤️ by <a href="https://linkedin.com/in/gabrielsanttana">Gabriel Santana</a></h6>
