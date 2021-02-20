@@ -34,8 +34,6 @@ $ git add test.ts
 $ git commit -m "Checking pre-commit workflow"
 ```
 
-The application will pop-up in the browser on http://localhost:3000
-
 ## ⚖️ License
 
 [MIT License](https://github.com/gabrielsanttana/husky-lint-staged-pre-commit/blob/master/LICENSE)
