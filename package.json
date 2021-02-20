@@ -2,6 +2,7 @@
   "name": "husky-lint-staged-pre-commit",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,12 +19,21 @@
   },
   "devDependencies": {
     "husky": "3.1.0",
-    "lint-staged": "^10.5.4"
+    "lint-staged": "^10.5.4",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest-dom": "^3.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-testing-library": "^3.2.0",
+    "prettier": "2.0.5",
+    "prettier-plugin-organize-imports": "^1.0.4",
+    "prettier-plugin-package": "^1.0.0",
+    "source-map-explorer": "^2.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test -w=50% --collect-coverage --silent ",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,8 +56,34 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'It is working'"
+      "pre-commit": "lint-staged && yarn test:ci"
     }
   },
-  "lint-staged": {}
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{scss,css}": [
+      "prettier  --write --parser=css"
+    ],
+    "*.{json}": [
+      "prettier  --write --parser=json"
+    ],
+    "*.{md}": [
+      "prettier  --write --parser=markdown"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "*.{ts,tsx,js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+  }
 }
