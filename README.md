@@ -26,7 +26,7 @@ $ cd husky-lint-staged-pre-commit
 $ yarn
 ```
 
-## 🧪 Pre-commit
+## 🧪 Pre commit
 
 ```bash
 $ touch src/test.ts
