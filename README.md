@@ -26,12 +26,12 @@ $ cd husky-lint-staged-pre-commit
 $ yarn
 ```
 
-## 🧪 Pre commit
+## 🧪 Commits
 
 ```bash
 $ touch src/test.ts
 $ git add test.ts
-$ git commit -m "Testing pre-commit workflow"
+$ git commit -m "Checking pre-commit workflow"
 ```
 
 The application will pop-up in the browser on http://localhost:3000
