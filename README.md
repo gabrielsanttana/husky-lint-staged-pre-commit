@@ -4,7 +4,7 @@
 
 <ul>
   <li><a href="https://github.com/typicode/husky">Husky</a></li>
-  <li><a href="https://github.com/okonet/lint-staged">Lint-Staged</a></li>
+  <li><a href="https://github.com/okonet/lint-staged">Lint Staged</a></li>
   <li><a href="https://prettier.io/">Prettier</a></li>
   <li><a href="https://eslint.org/docs/user-guide/getting-started">ESLint</a></li>
   <li><a href="https://jestjs.io/">Jest</a></li>
