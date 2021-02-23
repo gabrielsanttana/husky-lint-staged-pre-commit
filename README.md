@@ -1,5 +1,8 @@
 <p align="center">🐶 Setup for pre-commit workflows with Husky and Lint Staged</p>
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gabrielsanttana/husky-lint-staged-pre-commit/blob/master/LICENSE) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/gabrielsanttana/husky-lint-staged-pre-commit/blob/main/CONTRIBUTING.md)
+
 ## 🛠️ Technologies
 
 <ul>
